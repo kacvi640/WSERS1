@@ -49,3 +49,7 @@ text-align: center;
 border-radius: 20px;
   background-color: #f63ae6;
 }
+.flower{
+    align-items: center;
+    justify-content: center;
+}

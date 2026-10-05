@@ -8,7 +8,7 @@
             background-image: url("images/OIP.webp");
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
+            margin: 0;
             min-height: 100vh;
         }
 
@@ -30,7 +30,7 @@
         }
 
         nav a {
-            color: white;
+            
             text-decoration: none;
             font-size: 20px;
             text-shadow: 1px 1px 4px black;
@@ -42,7 +42,7 @@
   width: 200px;
   height: 150px;}
 body h2 {
-  color: rgb(227, 7, 7);
+  color: rgb(84, 7, 227);
   font-size: 36px;
   margin-top: 100px;
 text-align: center;
@@ -52,4 +52,7 @@ border-radius: 20px;
 .flower{
     align-items: center;
     justify-content: center;
+}
+.active{
+    color: white;
 }

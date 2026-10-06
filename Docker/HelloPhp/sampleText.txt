@@ -1,0 +1,3 @@
+hello from PHP! using print
+hello from PHP! using print
+The value of a is:

@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+        }
+        .red{
+            background-color:red;
+        }
+        .blue{
+            background-color:blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello from HTML </h1>
+   
     <?php
-    /*print "Hello from PHP! using print <br> \n";
-    echo "Hello from PHP! using echo  <br> \n";
-    $a=3;
-    echo "The value of a is:<br>";
-    echo $a ;
-    */
-    $a="Violetta";
-    $b="Kachuievska";
-    $c= $a ." ". $b;
-    echo $c
+     $twoDivs='<div class="red box"></div>
+     <div class="blue box"></div>';
+    for($i=0;$i<3;$i++){
+        echo $twoDivs;
+    }
     ?>
     
-   
     
 </body>
 </html>

@@ -10,10 +10,10 @@
     <h1 style="background-color: rgb(237, 56, 243); text-align: center;">Here are our contact information:</h1>
     <nav>
     <ul>
-       <h1><li><a href="index.html">Home</a></li></h1>
-        <h1><li><a href="products.html">Products</a></li></h1>
-        <h1><li><a href="aboutUs.html">About Us</a></li></h1>
-        <h1><li><a href="contact.html" class="active">Contact Us</a></li></h1>
+       <h1><li><a href="index.php">Home</a></li></h1>
+        <h1><li><a href="products.php">Products</a></li></h1>
+        <h1><li><a href="aboutUs.php">About Us</a></li></h1>
+        <h1><li><a href="contact.php" class="active">Contact Us</a></li></h1>
 
     </ul>
 </nav>

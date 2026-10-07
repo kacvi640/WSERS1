@@ -9,10 +9,10 @@
     <h1>About Us:</h1>
     <nav>
     <ul>
-       <h1><li><a href="index.html">Home</a></li></h1>
-        <h1><li><a href="products.html">Products</a></li></h1>
-        <h1><li><a href="aboutUs.html" class="active">About Us</a></li></h1>
-        <h1><li><a href="contact.html">Contact Us</a></li></h1>
+       <h1><li><a href="index.php">Home</a></li></h1>
+        <h1><li><a href="products.php">Products</a></li></h1>
+        <h1><li><a href="aboutUs.php" class="active">About Us</a></li></h1>
+        <h1><li><a href="contact.php">Contact Us</a></li></h1>
 
     </ul>
 </nav>

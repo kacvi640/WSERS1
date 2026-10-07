@@ -16,10 +16,10 @@
 <h2>Welcome to our nail shop</h2>
 <nav>
     <ul>
-       <h1><li><a href="index.html">Home</a></li></h1>
-        <h1><li><a href="products.html">Products</a></li></h1>
-        <h1><li><a href="aboutUs.html">About Us</a></li></h1>
-        <h1><li><a href="contact.html">Contact Us</a></li></h1>
+       <h1><li><a href="index.php">Home</a></li></h1>
+        <h1><li><a href="products.php">Products</a></li></h1>
+        <h1><li><a href="aboutUs.php">About Us</a></li></h1>
+        <h1><li><a href="contact.php">Contact Us</a></li></h1>
 
     </ul>
 </nav>

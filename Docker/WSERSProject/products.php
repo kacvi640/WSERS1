@@ -19,15 +19,10 @@
 <body>
 
     <h2>Here is you can fing thing for going your nails!</h2>
-     <nav>
-    <ul>
-       <h1><li><a href="index.php">Home</a></li></h1>
-        <h1><li><a href="products.php" class="active">Products</a></li></h1>
-        <h1><li><a href="aboutUs.php">About Us</a></li></h1>
-        <h1><li><a href="contact.php">Contact Us</a></li></h1>
-
-    </ul>
-</nav>
+   <?php
+   include_once("commonCode.php");
+   navigationBar("Products");
+   ?>
     <div class="products">
 
         <?php
@@ -41,11 +36,6 @@
             <?php
             }
         ?>
-
-        
-
-
-
 
 
 

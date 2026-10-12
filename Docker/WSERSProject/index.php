@@ -14,13 +14,8 @@
 <title>Home</title>
 </body>
 <h2>Welcome to our nail shop</h2>
-<nav>
-    <ul>
-       <h1><li><a href="index.php">Home</a></li></h1>
-        <h1><li><a href="products.php">Products</a></li></h1>
-        <h1><li><a href="aboutUs.php">About Us</a></li></h1>
-        <h1><li><a href="contact.php">Contact Us</a></li></h1>
-
-    </ul>
-</nav>
+<?php
+   include_once("commonCode.php");
+   navigationBar("Home");
+   ?>
 </html>

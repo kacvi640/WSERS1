@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="style.css">
 <body>
     <h1>About Us:</h1>
-    <nav>
-    <ul>
-       <h1><li><a href="index.php">Home</a></li></h1>
-        <h1><li><a href="products.php">Products</a></li></h1>
-        <h1><li><a href="aboutUs.php" class="active">About Us</a></li></h1>
-        <h1><li><a href="contact.php">Contact Us</a></li></h1>
+   
 
-    </ul>
-</nav>
+  <?php
+   include_once("commonCode.php");
+   navigationBar("About Us");
+   ?>
     
     <h2>We are a professional team, and we are taking care about our clients.
        We have premium products, and we are always trying to improve our services.

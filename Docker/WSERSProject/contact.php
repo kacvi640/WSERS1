@@ -10,7 +10,7 @@
     <h1 style="background-color: rgb(237, 56, 243); text-align: center;">Here are our contact information:</h1>
   <?php
    include_once("commonCode.php");
-   navigationBar("Contact");
+   navigationBar("Contact","En");
    ?>
     
     <h3 style="background-color: aliceblue; text-align: center;">Email address: NailShop@gmai.com</h3>

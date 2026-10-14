@@ -21,7 +21,7 @@
     <h2>Here is you can fing thing for going your nails!</h2>
    <?php
    include_once("commonCode.php");
-   navigationBar("Products");
+   navigationBar("Products","En");
    ?>
     <div class="products">
 

@@ -16,6 +16,6 @@
 <h2>Welcome to our nail shop</h2>
 <?php
    include_once("commonCode.php");
-   navigationBar("Home");
+   navigationBar("Home","En");
    ?>
 </html>

@@ -11,7 +11,7 @@
 
   <?php
    include_once("commonCode.php");
-   navigationBar("About Us");
+   navigationBar("About Us","En");
    ?>
     
     <h2>We are a professional team, and we are taking care about our clients.

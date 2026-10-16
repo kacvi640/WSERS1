@@ -22,38 +22,22 @@
    <?php
    include_once("commonCode.php");
    navigationBar("Products","Ru");
+   $nameofproducts=["Набор гель лаков","Фрезер","Пилочки","Стартовый набор","Полигель"];
+   $imageofproducts=["images/GelSet.webp","images/NailDrill.webp","images/NailFile.webp","images/NailSet.webp","images/Polygel.webp"];
+   $priceofproducts=["12,99","35,56","5,00","55,89","34,99"];
    ?>
     <div class="products">
-
-        <?php
-        for($i=0;$i<3;$i++)
-            {
-            ?>
-        <div class="OneItem">
-            <img src="images/GelSet.webp" alt="Gel Set" width="300" height="300" >
-            <div style="background-color: #f386ea; font-size: 24px;margin-top: 10px;text-align:left ;border-radius: 20px;">Набор гель лаков: 12,99$</div>
-        </div>    
-            <?php
-            }
+    <?php
+       for($i=0;$i<count($nameofproducts);$i++){
         ?>
-
-
-
-        <div class="OneItem">
-            <img src="images/NailDrill.webp" alt="Nail Drill" width="300" height="300">
-            <div style="background-color: #f386ea; font-size: 24px;margin-top: 10px;text-align:left ;border-radius: 20px;">Фрезер: 35,56$</div>
+        <div class="OneItem">     
+        <img src="<?php print $imageofproducts [$i] ?>"alt="$nameofproducts[$i]">
+        <div><?php print $nameofproducts[$i] ?></div>
+        <div> Цена: $<?php print $priceofproducts[$i]?></div>
         </div>
-
-        <div class="OneItem">
-            <img src="images/NailFile.webp" alt="Nail Files" width="300" height="300">
-            <div style="background-color: #f386ea; font-size: 24px;margin-top: 10px;text-align:left ;border-radius: 20px;">Пилочки:5,00$</div>
-        </div>
-
-        <div class="OneItem">
-            <img src="images/NailSet.webp" alt="Nail Set" width="300" height="300">
-            <div style="background-color: #f386ea; font-size: 24px;margin-top: 10px;text-align:left ;border-radius: 20px;">Стартовый набор: 55,89$</div>
-        </div>
-             
+        <?php
+       }
+       ?>
 
     </div>
 </body>

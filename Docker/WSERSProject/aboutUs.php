@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 <body>
     <h1>About Us:</h1>
-   
+   <div id="mainPage">
 
   <?php
    include_once("commonCode.php");
    navigationBar("About Us","En");
    ?>
-    
+     <div class="mainPageContent">
     <h2>We are a professional team, and we are taking care about our clients.
        We have premium products, and we are always trying to improve our services.
        We founded our company in 2022, and we did a lot of job, to make our service better and better for you.
@@ -24,6 +24,9 @@
         display: block;
         margin: 0 auto;
     }
+    
 </style>
+     </div>
+   </div>
 </body>
 </html>

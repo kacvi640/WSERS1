@@ -18,4 +18,4 @@
    include_once("commonCode.php");
    navigationBar("Home","Ru");
    ?>
-</html>
+</html>                                       

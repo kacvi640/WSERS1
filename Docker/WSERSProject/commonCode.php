@@ -11,58 +11,31 @@ while (!feof($fileTranslation)) {
     $anotherLineOfText = fgets($fileTranslation);
     $oneLineArray = explode(";", $anotherLineOfText);
    
-    if (count($oneLineArray)) {
-        $translations[$oneLineArray[0]] = $oneLineArray[1]; } 
+    if (count($oneLineArray) == 3) {
+        if ($lang == "EN"){
+        $translations[$oneLineArray[0]] = $oneLineArray[1];
+        }
         else {
         $translations[$oneLineArray[0]] = $oneLineArray[2];
     }
 }
+} 
  
  function navigationBar($activePage , $language){
+    global $translations;
     ?>
-    <?php 
-    if ($language=="En"){
-        ?>
         <nav>
     <ul>
-       <h1><li><a href="index.php" <?php if ($activePage=="Home"){print "class='active'";}?>>Home</a></li></h1>
-        <h1><li><a href="products.php" <?php if ($activePage=="Products"){print "class='active'";}?>>Products</a></li></h1>
-        <h1><li><a href="aboutUs.php" <?php if ($activePage=="About Us"){print "class='active'";}?>>About</a></li></h1>
-        <h1><li><a href="contact.php" <?php if ($activePage=="Contact"){print "class='active'";}?>>Contact</a></li></h1>
+       <h1><li><a href="index.php?lang?<?= $language ?>" <?php if ($activePage=="Home"){print "class='active'";}?>><?= $translations["HomeBtn"] ?></a></li></h1>
+        <h1><li><a href="products.php?lang?<?= $language ?>" <?php if ($activePage=="Products"){print "class='active'";}?>><?= $translations["ProductsBtn"] ?></a></li></h1>
+        <h1><li><a href="aboutUs.php?lang?<?= $language ?>" <?php if ($activePage=="About Us"){print "class='active'";}?>><?= $translations["AboutBtn"] ?></a></li></h1>
+        <h1><li><a href="contact.php?lang?<?= $language ?>" <?php if ($activePage=="Contact"){print "class='active'";}?>><?= $translations["ContactBtn"] ?></a></li></h1>
 
     </ul>
      <ul id="language-selector">
-            <li><a href="index.php" class="active">English</a></li>
-            <li><a href="index-ru.php">Russian</a></li>
+            <li><a href="index.php?lang=EN" <?php if ($language =="EN") print ('class="active"')?>;>English</a></li>
+            <li><a href="index.php?lang=RU"<?php if ($language =="RU") print ('class="active"')?>;>Russian</a></li>
         </ul>
 </nav>
-<?php 
-    }
-    ?>
-    <?php
-    if($language=="Ru"){
-        ?>
-        <nav>
-    <ul>
-       <h1><li><a href="index-ru.php" <?php if ($activePage=="Home"){print "class='active'";}?>>Главная</a></li></h1>
-        <h1><li><a href="products-ru.php" <?php if ($activePage=="Products"){print "class='active'";}?>>Товары</a></li></h1>
-        <h1><li><a href="aboutUs-ru.php" <?php if ($activePage=="About Us"){print "class='active'";}?>>Про нас</a></li></h1>
-        <h1><li><a href="contact-ru.php" <?php if ($activePage=="Contact"){print "class='active'";}?>>Контакты</a></li></h1>
-    </ul>
-    <ul id="language-selector">
-            <li><a href="index.php">English</a></li>
-            <li><a href="index-ru.php" class="active">Russian</a></li>
-        </ul>
-    </nav>
-</nav>
 <?php
-    }
-    ?>
-<?php
- }
- ?>
-
- 
- 
- 
- 
+    }  ?>

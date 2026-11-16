@@ -12,10 +12,11 @@
     </style>
 </head>
 <title>Home</title>
-</body>
-<h2><?= $translations["HomePageWelcome"] ?></h2>
+<body>
 <?php
    include_once("commonCode.php");
-   navigationBar("Home","En");
+   navigationBar("Home",$lang);
    ?>
+<h2><?= $translations["HomePageWelcome"] ?></h2>
+</body>
 </html>

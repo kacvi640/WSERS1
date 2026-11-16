@@ -23,12 +23,14 @@
 </head>
 
 <body>
+     <?php 
+     include_once("commonCode.php");
+     navigationBar("Products",$lang);
+     ?>
 
-    <h2>Here is you can fing thing for going your nails!</h2>
+    <h2><?= $translations["ProductsPage"] ?></h2>
     <div id="mainPage">
         <?php
-        include_once("commonCode.php");
-        navigationBar("Products", "En");
         $nameofproducts = ["GelSet", "NailDrill", "NailFiles", "NailSet", "PolyGel"];
         $imageofproducts = ["images/GelSet.webp", "images/NailDrill.webp", "images/NailFile.webp", "images/NailSet.webp", "images/Polygel.webp"];
         $priceofproducts = ["12,99", "35,56", "5,00", "55,89", "34,99"];
@@ -42,7 +44,7 @@
                     <div class="OneItem">
                         <img src="<?php print $imageofproducts[$i] ?>" alt="$nameofproducts[$i]">
                         <div><?php print $nameofproducts[$i] ?></div>
-                        <div> Price: $<?php print $priceofproducts[$i] ?></div>
+                        <div> price <?php print $priceofproducts[$i] ?></div>
                     </div>
                 <?php
                 }

@@ -6,17 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css?t=<?= time(); ?>">
 <body>
-    <h1>About Us:</h1>
-   <div id="mainPage">
+    <div id="mainPage">
 
   <?php
    include_once("commonCode.php");
-   navigationBar("About Us","En");
+   navigationBar("About Us",$lang);
    ?>
+    <h1><?= $translations["AboutPageMain"] ?></h1>
+   
      <div class="mainPageContent">
-    <h2> We have premium products, and we are always trying to improve our services.
-         We founded our company in 2022, and we did a lot of job, to make our service better and better for you.
-    </h2>
+    <h2><?= $translations["AboutPageMain"] ?></h2>
     <img src="images/Beautiful-Flowers.jpg.webp" width="300" height="300">
     <style>
     img {

@@ -33,7 +33,7 @@
         <?php
         $nameofproducts = ["GelSet", "NailDrill", "NailFiles", "NailSet", "PolyGel"];
         $imageofproducts = ["images/GelSet.webp", "images/NailDrill.webp", "images/NailFile.webp", "images/NailSet.webp", "images/Polygel.webp"];
-        $priceofproducts = ["12,99", "35,56", "5,00", "55,89", "34,99"];
+        $priceofproducts = ["12,99$", "35,56$", "5,00$", "55,89$", "34,99$"];
         ?>
         <div class="mainPageContent">
             <div class="products">
